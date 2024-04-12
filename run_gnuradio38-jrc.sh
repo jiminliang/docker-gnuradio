@@ -1,0 +1,1 @@
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --privileged -v /dev/bus/usb/:/dev/bus/usb/ --device /dev/snd -v /media/ljm/Works/docker-gnuradio/persistent38:/home/gnuradio38/persistent38 --group-add=audio -it ubuntu:gnuradio-3.8-jrc bash
