@@ -1,0 +1,1 @@
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --privileged -v /dev/bus/usb/:/dev/bus/usb/ --device /dev/snd -v /media/ljm/Works/docker-gnuradio/persistent310:/home/gnuradio310/persistent310 --group-add=audio --runtime=nvidia --gpus all -it ubuntu:gnuradio-3.10-radar bash
